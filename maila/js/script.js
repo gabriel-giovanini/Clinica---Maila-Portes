@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const isOpen = mobileMenu.classList.contains("active");
       mobileToggle.classList.toggle("active", !isOpen);
       mobileMenu.classList.toggle("active", !isOpen);
+      document.body.classList.toggle("menu-open", !isOpen);
+      if (header) header.classList.toggle("menu-open", !isOpen);
       document.body.style.overflow = !isOpen ? "hidden" : "";
     };
 
@@ -37,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
       link.addEventListener("click", () => {
         mobileToggle.classList.remove("active");
         mobileMenu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+        if (header) header.classList.remove("menu-open");
         document.body.style.overflow = "";
       });
     });
