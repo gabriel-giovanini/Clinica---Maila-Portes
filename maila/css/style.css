@@ -789,41 +789,72 @@ a {
 }
 
 /* ==========================================================================
-   DIFERENCIAIS — NUMERAÇÃO MONUMENTAL
+   CERTIFICAÇÕES & TITULAÇÕES (MOLDURAS LIMPAS)
    ========================================================================== */
-.differentials-editorial-grid {
+.certificates-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 28px;
 }
 
-.diff-column {
-  border-top: 1px solid var(--color-border);
-  padding-top: 32px;
+.certificate-frame {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(14, 32, 56, 0.03);
+  transition: all var(--transition);
+  position: relative;
+  aspect-ratio: 4 / 3;
 }
 
-.diff-big-number {
-  font-family: var(--font-serif);
-  font-size: 3.5rem;
-  font-weight: 300;
+.certificate-frame:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(14, 32, 56, 0.06);
+}
+
+.certificate-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.certificate-placeholder-white {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px dashed #dedbd4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.certificate-placeholder-white .cert-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--color-accent);
-  line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
-.diff-heading {
+.certificate-placeholder-white h4 {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.15rem;
+  font-weight: 600;
   color: var(--color-primary);
-  margin-bottom: 12px;
   line-height: 1.3;
+  margin-bottom: 4px;
 }
 
-.diff-paragraph {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  line-height: 1.75;
+.certificate-placeholder-white p {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.04em;
 }
 
 /* ==========================================================================
@@ -1192,7 +1223,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .differentials-editorial-grid {
+  .certificates-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1237,7 +1268,7 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .differentials-editorial-grid {
+  .certificates-grid {
     grid-template-columns: 1fr;
   }
 
