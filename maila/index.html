@@ -60,20 +60,39 @@
     </div>
   </header>
 
-  <!-- Menu Mobile -->
+  <!-- Menu Mobile Overlay -->
   <div class="mobile-nav-menu" aria-hidden="true">
-    <ul class="mobile-nav-links">
-      <li><a href="#inicio" class="mobile-link">Início</a></li>
-      <li><a href="#sobre" class="mobile-link">Sobre a Dra. Maila</a></li>
-      <li><a href="#especialidades" class="mobile-link">Especialidades</a></li>
-      <li><a href="#resultados" class="mobile-link">Resultados Clínicos</a></li>
-      <li><a href="#consultorio" class="mobile-link">O Consultório</a></li>
-      <li><a href="#depoimentos" class="mobile-link">Depoimentos</a></li>
-      <li><a href="#contato" class="mobile-link">Contato</a></li>
-    </ul>
-    <a href="https://wa.me/551941415873?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20uma%20avalia%C3%A7%C3%A3o%20odontol%C3%B3gica." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; max-width: 260px;">
-      Falar pelo WhatsApp
-    </a>
+    <!-- Barra Superior do Menu com Logo e Botão Voltar -->
+    <div class="mobile-menu-header">
+      <a href="#inicio" class="mobile-brand-link mobile-link" aria-label="Maila Portes Odontologia">
+        <span class="mobile-brand-name">Maila Portes</span>
+        <span class="mobile-brand-spec">Odontologia</span>
+      </a>
+      <button class="mobile-menu-close" aria-label="Fechar menu e voltar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        <span>Voltar</span>
+      </button>
+    </div>
+
+    <!-- Conteúdo / Links de Navegação -->
+    <div class="mobile-menu-body">
+      <ul class="mobile-nav-links">
+        <li><a href="#inicio" class="mobile-link">Início</a></li>
+        <li><a href="#sobre" class="mobile-link">Sobre a Dra. Maila</a></li>
+        <li><a href="#especialidades" class="mobile-link">Especialidades</a></li>
+        <li><a href="#resultados" class="mobile-link">Resultados Clínicos</a></li>
+        <li><a href="#certificacoes" class="mobile-link">Certificações</a></li>
+        <li><a href="#consultorio" class="mobile-link">O Consultório</a></li>
+        <li><a href="#depoimentos" class="mobile-link">Depoimentos</a></li>
+        <li><a href="#contato" class="mobile-link">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/551941415873?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20uma%20avalia%C3%A7%C3%A3o%20odontol%C3%B3gica." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; max-width: 280px; text-align: center;">
+        Falar pelo WhatsApp
+      </a>
+    </div>
   </div>
 
   <!-- ==========================================================================
@@ -352,7 +371,7 @@
   <!-- ==========================================================================
        CERTIFICAÇÕES & TITULAÇÕES
        ========================================================================== -->
-  <section class="section section-white">
+  <section id="certificacoes" class="section section-white">
     <div class="container">
       <div class="section-header center reveal">
         <span class="eyebrow">Formação & Reconhecimento</span>
