@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clinica-maila-portes.vercel.app/sitemap.xml

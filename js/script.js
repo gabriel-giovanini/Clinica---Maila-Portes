@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".site-header");
   
   const handleScroll = () => {
+    if (!header) return;
     if (window.scrollY > 30) {
       header.classList.add("scrolled");
     } else {
@@ -28,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeMenu = () => {
       mobileToggle.classList.remove("active");
       mobileMenu.classList.remove("active");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      mobileMenu.inert = true;
+      mobileToggle.setAttribute("aria-expanded", "false");
+      mobileToggle.focus();
       document.body.classList.remove("menu-open");
       if (header) header.classList.remove("menu-open");
       document.body.style.overflow = "";
@@ -40,12 +45,26 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         mobileToggle.classList.add("active");
         mobileMenu.classList.add("active");
+        mobileMenu.setAttribute("aria-hidden", "false");
+        mobileMenu.inert = false;
+        mobileToggle.setAttribute("aria-expanded", "true");
+        mobileClose?.focus();
         document.body.classList.add("menu-open");
         if (header) header.classList.add("menu-open");
         document.body.style.overflow = "hidden";
       }
     };
 
+    document.addEventListener("keydown", (event) => {
+      if (!mobileMenu.classList.contains("active")) return;
+      if (event.key === "Escape") closeMenu();
+      if (event.key === "Tab") {
+        const focusable = [...mobileMenu.querySelectorAll("a[href], button")];
+        const first = focusable[0], last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    });
     mobileToggle.addEventListener("click", toggleMobileMenu);
     if (mobileClose) {
       mobileClose.addEventListener("click", closeMenu);
