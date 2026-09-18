@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "redstrek": {
+      "type": "stdio",
+      "command": "/Users/twoone/.local/bin/reds",
+      "args": [
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "REDS_WORKSPACE": "/Users/twoone/.Trash/Clinica---Maila-Portes"
+      }
+    }
+  }
+}
