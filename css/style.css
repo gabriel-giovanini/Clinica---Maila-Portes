@@ -1641,3 +1641,247 @@ body.menu-open .site-header .brand-spec,
     gap: 18px;
   }
 }
+
+/* ==========================================================================
+   SEÇÃO DE CURSOS — CARDS DE MARKETING
+   ========================================================================== */
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.curso-card {
+  position: relative;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.curso-card:hover {
+  box-shadow: 0 12px 40px rgba(74, 21, 37, 0.10);
+  transform: translateY(-4px);
+}
+
+.curso-card--featured {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 24px rgba(191, 163, 124, 0.15);
+}
+
+.curso-card--featured:hover {
+  box-shadow: 0 16px 48px rgba(191, 163, 124, 0.22);
+}
+
+/* Badge no topo do card */
+.curso-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.curso-card__badge--gold {
+  background: #FDF7EE;
+  color: #8B6914;
+  border-bottom-color: #EDD9A0;
+}
+
+/* Plataforma */
+.curso-card__platform {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border-subtle);
+  background: var(--color-bg-alt);
+}
+
+.curso-card__platform--mandic {
+  color: #162052;
+}
+
+/* Corpo do card */
+.curso-card__body {
+  padding: 28px 28px 20px;
+  flex: 1;
+}
+
+.curso-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.curso-card__desc {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Lista de features */
+.curso-card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.curso-card__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.curso-card__features li svg {
+  color: var(--color-primary-muted);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.curso-card--featured .curso-card__features li svg {
+  color: #8B6914;
+}
+
+/* Footer do card */
+.curso-card__footer {
+  padding: 20px 28px 28px;
+  border-top: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.curso-card__instructor {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.curso-card__instructor svg {
+  color: var(--color-primary-muted);
+  flex-shrink: 0;
+}
+
+/* CTA do card */
+.curso-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  padding: 10px 22px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.curso-card__cta:hover {
+  transform: translateX(2px);
+}
+
+/* Faixa de credibilidade abaixo dos cards */
+.cursos-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 48px;
+  padding: 24px 32px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.cursos-trust__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 32px;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.cursos-trust__item svg {
+  color: var(--color-primary-muted);
+  flex-shrink: 0;
+}
+
+.cursos-trust__divider {
+  width: 1px;
+  height: 36px;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+/* Responsividade — Cursos */
+@media (max-width: 768px) {
+  .cursos-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .curso-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .curso-card__cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cursos-trust {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 20px;
+  }
+
+  .cursos-trust__item {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .cursos-trust__divider {
+    width: 40px;
+    height: 1px;
+  }
+}
