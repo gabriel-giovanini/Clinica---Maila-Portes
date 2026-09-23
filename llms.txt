@@ -1,0 +1,27 @@
+# Maila Portes Odontologia
+
+> Clínica odontológica da Dra. Maila Portes no bairro Bonfim, em Campinas, São Paulo, Brasil. O site apresenta atendimento em Ortodontia, Sistemas Ertty e Ortopedia Facial e Funcional, com planejamento individualizado.
+
+Este arquivo resume informações publicadas no site oficial da clínica, em português brasileiro.
+
+- Profissional: Dra. Maila Portes, apresentada no site como Especialista, MSc e PhD em Ortodontia, especialista em Sistemas Ertty e professora de Ortodontia e Ortopedia Facial e Funcional.
+- Endereço: Rua Dr. Rafael Sáles, 954, Bonfim, Campinas — SP, CEP 13073-021, Brasil.
+- Telefone: +55 19 4141-5873.
+- Agendamento: solicitação pelo canal de WhatsApp disponível no site, sujeita à confirmação de data e horário pela equipe.
+- Dias e horários de atendimento: consultar diretamente a clínica.
+- A indicação, a duração e os resultados dos tratamentos dependem de avaliação individual. Os casos clínicos apresentados no site não garantem resultados para outros pacientes.
+
+## Informações da clínica
+
+- [Site oficial](https://clinica-maila-portes.vercel.app/): Apresentação da clínica e acesso aos canais de atendimento.
+- [Sobre a Dra. Maila Portes](https://clinica-maila-portes.vercel.app/#sobre): Perfil profissional e formação informada pela clínica.
+- [Áreas de atendimento](https://clinica-maila-portes.vercel.app/#especialidades): Ortodontia, Sistemas Ertty e Ortopedia Facial e Funcional.
+- [Consultório](https://clinica-maila-portes.vercel.app/#consultorio): Apresentação do espaço de atendimento.
+- [Dúvidas frequentes](https://clinica-maila-portes.vercel.app/#faq): Orientações sobre avaliação, localização, contato e resultados individuais.
+- [Contato e localização](https://clinica-maila-portes.vercel.app/#contato): Acesso ao WhatsApp, localização no mapa e Instagram oficial.
+- [Política de privacidade](https://clinica-maila-portes.vercel.app/privacidade.html): Informações sobre privacidade e serviços utilizados pelo site.
+
+## Optional
+
+- [Cursos e mentorias](https://clinica-maila-portes.vercel.app/#cursos): Formação em Ortopedia Facial e Funcional dos Maxilares apresentada no site.
+- [Instagram oficial](https://www.instagram.com/dramailaportes/): Perfil público @dramailaportes.
